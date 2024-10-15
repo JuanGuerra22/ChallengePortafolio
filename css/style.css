@@ -8,7 +8,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     background-color: var(--bg-color);
 }
@@ -26,20 +26,32 @@ ul, li {
 .cabecera{
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 1rem;
+}
+.navegacion{
+    
+    display: flex; 
+    width: 100%;
+}
+.navegacion__lista {
+    display: flex;
+    width: 100%;
+}
+
+.navegacion__elemento__cont {
+    margin-left: auto;  
 }
 .cabecera__logo{
   max-width: 30px;
 }
 .cabecera__titulo{
-    font-size: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
 }
 /*NAVEGACION */
-.navegacion__elemento{
-   display: none;
-}
+    .navegacion__elemento{
+        display: none;
+    }
 
 
 /*presentacion */
@@ -59,7 +71,6 @@ ul, li {
 }
 .redes{
     display: flex;
-    flex-direction: column;
     align-items: center;
     white-space: nowrap;
     flex-wrap: nowrap;
@@ -164,7 +175,7 @@ ul, li {
 
 .formacion_elemento img{
     max-width: 250px;
-    max-height: 200px;
+    max-height: 250px;
 }
 
 .formacion_parrafo{
@@ -174,12 +185,71 @@ ul, li {
 .bg_img{
     display: flex;
     justify-content: center;   
-    background-color: var(--bg-color-card);
+    background-color: #fff;
     border-radius: 10px;
 }
 
 /*Media Query para tablets*/
 
-@media(min-width: 768px){
+@media(min-width: 650px){
+ 
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .presentacion__foto{
+        max-width: 150px;
+    }
+    .redes{
+        flex-direction: row;
+        gap: 25px;
+    }
 
+    .habilidades_lista{
+        gap: 15px;
+    }
+
+    .habilidades_elemento{
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .habilidades_elemento img{
+        min-width: 80px;
+    }
+
+    .hobbies_lista{
+        gap: 15px;
+    }
+    .hobbies_elemento{
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .hobbies_elemento img{
+        min-width: 80px;
+    }
+
+    .formacion_lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .formacion_elemento img{
+        max-width: 250px;
+        max-height: 3000px;
+    }
+    #img_unicor{
+        max-height: 200px;
+    }
+   
+    .bg_img{
+        min-height: 200px;
+        align-items: center;
+    }
+    #img_alura{
+        height: 100px;
+    }
 }
