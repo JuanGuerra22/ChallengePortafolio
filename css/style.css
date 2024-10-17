@@ -28,19 +28,7 @@ ul, li {
     align-items: center;
     padding: 1rem;
 }
-.navegacion{
-    
-    display: flex; 
-    width: 100%;
-}
-.navegacion__lista {
-    display: flex;
-    width: 100%;
-}
 
-.navegacion__elemento__cont {
-    margin-left: auto;  
-}
 .cabecera__logo{
   max-width: 30px;
 }
@@ -49,12 +37,23 @@ ul, li {
     white-space: nowrap;
 }
 /*NAVEGACION */
+.navegacion{
+    display: flex; 
+    width: 100%;
+    }
+    .navegacion__lista {
+        display: flex;
+        width: 100%;
+    }
     .navegacion__elemento{
         display: none;
+    } 
+
+    .navegacion__elemento__cont {
+        margin-left: auto;  
     }
 
-
-/*presentacion */
+/* Seccion presentacion */
 .presentacion{
     padding: 1rem;
     justify-content: center;
@@ -108,7 +107,7 @@ ul, li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
 }
 .habilidades_elemento{
     display: flex;
@@ -141,7 +140,7 @@ ul, li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 15px;
 }
 
 .hobbies_elemento{
@@ -189,9 +188,13 @@ ul, li {
     border-radius: 10px;
 }
 
+
+
 /*Media Query para tablets*/
 
 @media(min-width: 650px){
+
+    /* Seccion presentacion*/
  
     .presentacion{
         display: flex;
@@ -204,6 +207,14 @@ ul, li {
         flex-direction: row;
         gap: 25px;
     }
+
+    /* Seccion Sobre mi*/
+
+    .sobre-mi_parrafo{
+        text-align: justify;
+    }
+
+    /* Seccion habilidades*/
 
     .habilidades_lista{
         gap: 15px;
@@ -218,6 +229,8 @@ ul, li {
         min-width: 80px;
     }
 
+    /* Seccion hobbies*/
+
     .hobbies_lista{
         gap: 15px;
     }
@@ -228,6 +241,8 @@ ul, li {
     .hobbies_elemento img{
         min-width: 80px;
     }
+
+    /* Seccion formacion*/
 
     .formacion_lista{
         display: flex;
@@ -251,5 +266,23 @@ ul, li {
     }
     #img_alura{
         height: 100px;
+    }
+}
+
+@media(min-width:1024px){
+
+    /*Cabecera*/
+    .cabecera__titulo{
+        font-size: 2.5rem;
+    }
+
+    /*Navegacion*/
+    .navegacion__elemento{
+        display: flex; /*Muestra el menu de navegacion*/
+    }
+    .navegacion__lista{
+        gap: 15px;
+        width: auto;
+        margin-left: auto;
     }
 }
