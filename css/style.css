@@ -1,14 +1,21 @@
 :root{
-    --bg-color:#cde0bf;
-    --bg-color-card:#a7b381;
-    --text-sec-color: #5e3848;
+    --bg-color:#84a98c;
+    --bg-color-card:#52796f;
+    --text-sec-color: #2f3e46;
+   
 }
+/*paleta de colores
+    -1 #2f3e46
+    -2 #354f52
+    -3 #52796f
+    -4 #84a98c
+    -5 #cad2c5
+*/
 
 
 body{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    padding: 1rem;
     margin: 0;
     background-color: var(--bg-color);
 }
@@ -16,6 +23,7 @@ body{
 a{
     text-decoration: none;
     color: var(--text-sec-color);
+    font-weight: 600;
 }
 
 ul, li {
@@ -48,9 +56,13 @@ ul, li {
     .navegacion__elemento{
         display: none;
     } 
+    .navegacion__elemento a{
+        font-size: .9rem;
+    }
 
     .navegacion__elemento__cont {
         margin-left: auto;  
+        font-size: .9rem ;
     }
 
 /* Seccion presentacion */
@@ -62,7 +74,7 @@ ul, li {
 }
 .presentacion__foto{
     max-width: 80px;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 .presentacion__contenedor{
     justify-content: center;
@@ -86,10 +98,14 @@ ul, li {
 
 .sobre-mi{
     padding: 1rem;
+    background-color: var(--bg-color-card);
 }
-.sobre-mi_titulo{
-    font-size: 2rem;
+.titulos{
+    font-size: 1.5rem;
     text-align: center;
+}
+.img-firma{
+    max-width: 8rem;
 }
 
 
@@ -99,10 +115,7 @@ ul, li {
     display: flex;
     flex-direction: column;
 }
-.habilidades_titulo{
-    font-size: 2rem;
-    text-align: center;
-}
+
 .habilidades_lista{
     display: flex;
     justify-content: center;
@@ -131,10 +144,7 @@ ul, li {
     display: flex;
     flex-direction: column;
 }
-.hobbies_titulo{
-    font-size: 2rem;
-    text-align: center;
-}
+
 
 .hobbies_lista{
     display: flex;
@@ -165,12 +175,9 @@ ul, li {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    background-color: var(--bg-color-card);
 }
 
-.formacion_titulo{
-    font-size: 2rem;
-    text-align: center;
-}
 
 .formacion_elemento img{
     max-width: 250px;
@@ -188,31 +195,66 @@ ul, li {
     border-radius: 10px;
 }
 
+/*Seccion Formacion personal*/
+.experiencia{
+    padding: 2rem;
+}
 
+.img_exp{
+    display: flex;
+    justify-content: center;
+}
+
+.img_exp img{
+   max-width: 420px;
+}
+.exp_parrafo{
+    text-align: center;
+    font-weight: 700;
+}
+/*---------------------------------------------------------*/
 
 /*Media Query para tablets*/
 
 @media(min-width: 650px){
 
+    .cabecera{
+        padding: 0 3rem;
+    }
+    .titulos{
+        font-size: 2rem;
+        text-align: center;
+    }
+
     /* Seccion presentacion*/
- 
+    
     .presentacion{
         display: flex;
         flex-direction: row-reverse;
+        padding: 0 3rem;
     }
     .presentacion__foto{
-        max-width: 150px;
+        max-width: 7rem;
     }
     .redes{
         flex-direction: row;
         gap: 25px;
+    }
+    .presentacion__subtitulo{
+        text-align: justify;
     }
 
     /* Seccion Sobre mi*/
 
     .sobre-mi_parrafo{
         text-align: justify;
+        padding: 0 2rem;
     }
+    .img-firma{
+        max-width: 10rem;
+        padding: 0 2rem;
+    }
+    
 
     /* Seccion habilidades*/
 
@@ -269,11 +311,20 @@ ul, li {
     }
 }
 
-@media(min-width:1024px){
+/*Media Query para Escritorio*/
+
+@media(min-width:1000px){
+
 
     /*Cabecera*/
+    .cabecera{
+        padding: 0 8rem;
+    }
     .cabecera__titulo{
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .presentacion__foto{
+        max-width: 300px;
     }
 
     /*Navegacion*/
@@ -281,8 +332,20 @@ ul, li {
         display: flex; /*Muestra el menu de navegacion*/
     }
     .navegacion__lista{
-        gap: 15px;
+        gap: 10px;
         width: auto;
         margin-left: auto;
     }
+
+    .presentacion{
+        padding: 0 8rem;
+    }
+
+    .sobre-mi{
+      padding: 0 6rem;
+    }
+    .img-firma{
+        max-width: 12rem;
+    }
+    
 }
