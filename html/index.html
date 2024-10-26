@@ -18,12 +18,12 @@
         <nav class="navegacion">
           
            <ul class="navegacion__lista">
-                <li class="navegacion__elemento"> <a href="#">Sobre mi</a></li>
-                <li class="navegacion__elemento"> <a href="#">Skills</a></li>
-                <li class="navegacion__elemento"> <a href="#">Hobbies</a></li>
-                <li class="navegacion__elemento"> <a href="#">Formacion</a></li>
-                <li class="navegacion__elemento"> <a href="#">Proyectos</a></li>
-                <li class="navegacion__elemento__cont"> <a href="#">Juan.l.guerrar@gmail.com</a></li>
+                <li class="navegacion__elemento"> <a href="#sobremi">Sobre mi</a></li>
+                <li class="navegacion__elemento"> <a href="#skills">Skills</a></li>
+                <li class="navegacion__elemento"> <a href="#hobbies">Hobbies</a></li>
+                <li class="navegacion__elemento"> <a href="#formacion">Formacion</a></li>
+                <li class="navegacion__elemento"> <a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento__cont"> <a href="#contacto">Juan.l.guerrar@gmail.com</a></li>
            </ul>
          
         </nav>
@@ -37,25 +37,27 @@
             <h2 class="presentacion__titulo">Hola, mi nombre es Juan Guerra y construyo páginas web</h2>
             <p class="presentacion__subtitulo">Soy Licenciado en Informatica y medios audiovisuales. Actualmente soy formado en Alura Latam y estoy participando del proyecto Oracle ONE en Alura Latam.</p>
             <ul class="redes">
-                <li class="redes__img"><a href="#">Linkedin <img src="../img/flecha.png" alt="logo linkedin"></a></li>
-                <li class="redes__img"><a href="#">Instagram <img src="../img/flecha.png" alt="logo instagram"></a></li>
-                <li class="redes__img"><a href="#">Github <img src="../img/flecha.png" alt="logo github"></a></li>
+                <li id="linkedin" class="redes__img"><a href="#">Linkedin <img src="../img/flecha.png" alt="logo linkedin"></a></li>
+                <li id="instagram" class="redes__img"><a href="#">Instagram <img src="../img/flecha.png" alt="logo instagram"></a></li>
+                <li id="github" class="redes__img"><a href="#">Github <img src="../img/flecha.png" alt="logo github"></a></li>
                 <li class="redes__img"><a href="#">Currículo <img src="../img/flecha.png" alt="logo curriculo"></a></li>
             </ul>
         </div>
     </section>
 
 <!-- Sección de Sobre mi -->
-    <section class="sobre-mi">
+    <section class="sobre-mi" id="sobremi">
         <h2 class="titulos">Sobre mi</h2>
         <p class="sobre-mi_parrafo">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt molestiae quae cupiditate excepturi modi consequuntur voluptas id fugiat. Necessitatibus beatae hic sint quia dolores quaerat veritatis doloremque fuga eum esse?
+            ¡Hola! Soy Juan Luis Guerra, licenciado en Informática y Medios Audiovisuales y docente apasionado por la tecnología y la educación. Tengo conocimientos sólidos en <strong>HTML, CSS y JavaScript</strong> , y actualmente estoy expandiendo mis habilidades en programación <strong>front-end</strong>  con <strong>Alura Latam.</strong>  Mi curiosidad y facilidad para comprender sistemas me impulsan a explorar y aprender constantemente. <br><br>
+            
+            Además de mi interés en el desarrollo web, disfruto de la electrónica y todo tipo de proyectos de bricolaje y manualidades. También soy un entusiasta del gimnasio, siempre buscando mantener un equilibrio entre mis intereses profesionales y personales. Si buscas a alguien apasionado, versátil y con una perspectiva creativa en cada proyecto, ¡aquí estoy para colaborar!
         </p>
         <img class="img-firma" src="../img/firma.png" alt="Firma Digital">
     </section>
 
     <!-- Sección de Habilidades -->
-    <section class="habilidades">
+    <section class="habilidades" id="skills">
         <h2 class="titulos">Habilidades</h2>
         
         <ul class="habilidades_lista">
@@ -79,7 +81,7 @@
     </section>
 
 <!-- Sección de hobbies -->
-    <section class="hobbies">
+    <section class="hobbies" id="hobbies">
         <h2 class="titulos">Hobbies</h2>
         <ul class="hobbies_lista">
             <li class="hobbies_elemento">
@@ -99,7 +101,7 @@
 
 
     <!-- Sección de FORMACION ACADEMICA  -->
-    <section class="formacion">
+    <section class="formacion" id="formacion">
         <h2 class="titulos">Formación</h2>
         <ul class="formacion_lista">
             <li class="formacion_elemento">
@@ -115,8 +117,8 @@
         </ul>
     </section>
      <!-- Sección de EXPERIENCIA PROFESIONAL  -->
-      <section class="experiencia">
-        <h2 class="titulos">Experiencia Personal</h2>
+      <section class="experiencia" id="proyectos">
+        <h2 class="titulos">Proyectos Personales</h2>
         <div class="experiencia_box">
         <div class="img_exp"><img src="../img/exp1.png" alt="Imagen Experiencia encriptador"></div>
         
@@ -125,15 +127,29 @@
         <p class="exp_parrafo">Challenge Oracle </p>
         
         <div class="botones">
-            <button class="btn_repositorio"> Repositorio </button>
-            <button class="btn_demo"> Ver demo </button>
+            <button id="btn_repositorio_encrip" class="btn_repositorio" type="button" onclick="btnRepositorio"> Repositorio </button>
+            <button id="btn_demo_encrip" class="btn_demo" type="button" onclick="btnDemo"> Ver demo </button>
+        </div>
+        </div>
+        </div>
+
+        <div class="experiencia_box">
+        <div class="img_exp"><img src="../img/numSecreto.png" alt="Imagen juego de numero secreto"></div>
+        
+        <div class="experiencia_box2">
+        <p class="exp_parrafo">Juego del número secreto</p>
+        <p class="exp_parrafo">Challenge Oracle</p>
+        
+        <div class="botones">
+            <button id="btn_repositorio_juego" class="btn_repositorio" type="button" onclick="btnRepositorio"> Repositorio </button>
+            <button id="btn_demo_juego" class="btn_demo" type="button" onclick="btnDemo"> Ver demo </button>
         </div>
         </div>
         </div>
       </section>
 
       <!-- Sección de CONTACTO  -->
-      <section class="contacto">
+      <section class="contacto" id="contacto">
         <div class="img_contacto"><img src="../img/contacto.jpg" alt="imagen alusiva a contacto"></div>
         <div class="contacto_box">
         <h2 class="titulos">Contacto</h2>
@@ -154,4 +170,5 @@
     </footer>
     
 </body>
+<script src="../script/script.js"></script>
 </html>
