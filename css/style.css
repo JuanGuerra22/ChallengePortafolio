@@ -2,6 +2,7 @@
     --bg-color:#84a98c;
     --bg-color-card:#52796f;
     --text-sec-color: #2f3e46;
+    --btn-color: #034163;
    
 }
 /*paleta de colores
@@ -10,6 +11,7 @@
     -3 #52796f
     -4 #84a98c
     -5 #cad2c5
+
 */
 
 
@@ -41,7 +43,7 @@ ul, li {
   max-width: 30px;
 }
 .cabecera__titulo{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     white-space: nowrap;
 }
 /*NAVEGACION */
@@ -211,6 +213,100 @@ ul, li {
 .exp_parrafo{
     text-align: center;
     font-weight: 700;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+
+}
+.btn_repositorio{
+    cursor: pointer;
+    border: 2px solid var(--btn-color);
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    min-width: 100px;
+    height: 40px;
+    color: var(--btn-color);
+    
+}
+
+.btn_demo{
+    cursor: pointer;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--btn-color);
+    color: #fff;
+}
+
+
+/*SECCION CONTACTO*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-card);
+}
+
+.contacto_parrafo{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.contacto_formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.contacto_campo{
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding-left: 15px;
+}
+.contacto_campo:focus{
+    border-bottom: 2px solid var(--btn-color);
+}
+.contacto_area{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 6px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.contacto_area:focus{
+    border-bottom: 2px solid var(--btn-color);
+}
+
+.contacto_boton{
+    width: 150px;
+    height: 40px;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.parrafo_footer{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 /*---------------------------------------------------------*/
 
