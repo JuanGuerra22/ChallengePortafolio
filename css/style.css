@@ -208,7 +208,7 @@ ul, li {
 }
 
 .img_exp img{
-   max-width: 420px;
+   max-width: 100%;
 }
 .exp_parrafo{
     text-align: center;
@@ -244,6 +244,10 @@ ul, li {
 
 
 /*SECCION CONTACTO*/
+
+.img_contacto{
+    display: none;
+}
 
 .contacto{
     display: flex;
@@ -319,7 +323,6 @@ ul, li {
     }
     .titulos{
         font-size: 2rem;
-        text-align: center;
     }
 
     /* Seccion presentacion*/
@@ -406,8 +409,14 @@ ul, li {
         height: 100px;
     }
 }
+    /*Seccion experiencia*/
+    .exp_parrafo{
+        font-size: 1.2rem;
+    }
+  
 
-/*Media Query para Escritorio*/
+/*------------------------------------------------------------*/
+/*Media Query para Escritorio */ 
 
 @media(min-width:1000px){
 
@@ -444,4 +453,38 @@ ul, li {
         max-width: 12rem;
     }
     
+    /*Seccion Experiencia P*/
+
+    .experiencia_box{
+        display: flex;
+        align-items: center;
+    }
+    .img_exp img{
+        width: 80%;
+    }
+
+    .experiencia_box2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    /*Seccion contacto*/
+    .contacto{
+        display: flex;
+        flex-direction: row;
+    }
+    .contacto_box{
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+    }
+    .img_contacto{
+        display: flex;      
+    }
+
+    .img_contacto img{
+        max-height: 550px;
+    }
 }
